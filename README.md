@@ -135,9 +135,13 @@ CSS 相关问题
     
     
     p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
+        如：div p:first-of-type 找到所有div元素下的第一个子p，不包含孙辈以后的p。
     p:last-of-type  选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
+        如：div p:last-of-type 找到所有div元素下的最后一个子p，不包含孙辈以后的p。
     p:only-of-type  选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
+        如：div p:only-of-type 找到所有的p，该p在其父元素div中必须是唯一的一个p。???
     p:only-child    选择属于其父元素的唯一子元素的每个 <p> 元素。
+        如：div p:only-of-type 找到所有的p，该p在其父元素div中必须是唯一的一个子p。???
     p:nth-child(2)  选择属于其父元素的第二个子元素的每个 <p> 元素。
     :enabled  :disabled 控制表单控件的禁用状态。
     :checked        单选框或复选框被选中。
