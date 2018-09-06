@@ -216,6 +216,16 @@ CSS 相关问题
 ###对BFC规范的理解？
           BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
         （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
+#### 触发BFC的条件 ####
+1. 浮动元素，float 不为 none 的元素；
+2. 绝对定位元素，position 为 absolute 和 fixed 的元素；
+3. display 为以下值的元素: inline-blocks, table-cells, table-captions；
+4. overflow 除了 visible 以外的值（hidden, auto, scroll）；
+
+#### BFC的应用场景及作用 ####
+1. 解决父级高度塌陷问题；
+2. 同级元素遮挡问题；
+3. margin互相折叠问题，及margin传播到父级元素的问题。
 
 ###解释下 CSS sprites，以及你要如何在页面或网站中使用它。
 
